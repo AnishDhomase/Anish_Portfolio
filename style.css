@@ -1,0 +1,283 @@
+@font-face {
+    font-family: poppinsR;
+    src: url(font/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: tiltR;
+    src: url(font/TiltPrism-Regular-VariableFont_XROT\,YROT.ttf);
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: PoppinsR,sans-serif;
+}
+
+/* ELEMENTS */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+    padding: 0 10vw;
+   
+}
+nav #Logo{
+    font-size: 3.75vh;
+    font-weight: 900;
+    font-family: tiltR;
+}
+nav #Menu{
+    display: flex;
+    gap: 5vw;
+    font-weight: 500;
+    font-size: 1.25vh;
+
+}
+nav #Menu a{
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+    padding: 0.5vw;
+
+}
+nav #Menu i{
+    display: none;
+}
+#one{
+    width: 100%;
+}
+#one img{
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+#two{
+    padding-top: 25vh;
+    
+    display: flex;
+    justify-content: center;
+    gap: 2.5vw;
+   
+}
+#two #MyImage{
+    text-align: center;
+}
+#two img{
+    width: 25vw;
+}
+#two #Content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.7vw;
+}
+#two #Content #Name{
+    font-size: 2.75vw;
+    font-weight: 600;
+    color: rgb(113, 113, 113);
+}
+#two #Content #Work{
+    font-size: 3.75vw;
+    font-weight: 900;
+    color: rgb(82, 82, 82);
+
+    
+}
+#two #Content #Greet{
+    font-size: 1.75vw;
+    font-weight: 500;
+    color: rgb(122, 122, 122);
+
+    
+}
+#two #Content #Button{
+    margin-top: 1vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+    
+    
+}
+#two #Content #Button a{
+    border-radius: 50px;
+    border: 1px solid black;
+    padding: 1vh 1vw;
+    text-decoration: none;
+    font-size: 1.75vh;
+    font-weight: 500;
+    
+}
+#two #Content #Button #b1{
+
+    background-color: white;
+    color: black;
+}
+#two #Content #Button #b2{
+    background-color: black;
+    color: white;
+    
+    
+}
+h1#about{
+    font-size: 2.75vw;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 20vh;
+    line-height: 1;
+}
+h1#about span{
+    font-size: 1vw;
+    font-weight: 200;
+}
+#three{
+    margin-top: 10vh;
+    margin-bottom: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    padding: 0 10vw;
+
+}
+#three #aboutTxt{
+    width: 52%;
+    display: flex;
+    font-size: 0.65vw;
+    font-weight: 100;
+    color: rgb(77, 76, 76);
+    line-height: 3;
+}
+#three #nane img{
+    width:17vw;
+    border-radius: 25px;
+}
+h1#skillHead{
+    font-size: 2.75vw;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 35vh;
+    line-height: 1;
+}
+h1#skillHead span{
+    font-size: 1vw;
+    font-weight: 200;
+}
+
+#skills{
+    /* border: 1px solid red; */
+    padding: 0 15vw;
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#skills div{
+    margin: 1vh 1.5vw;
+    text-align: center;
+    /* border: 1px solid black; */
+}
+#skills h1{
+    font-size: 1.12vw;
+    font-weight: 100;
+}
+#skills img{
+    height: 14vh;
+    width: 10vw;
+}
+#skills #css img{
+    margin-top: 13px;
+    height: 11vh;
+    width: 8vw;
+}
+#skills #js img{
+    margin-top: 13px;
+    height: 11vh;
+    width: 8vw;
+}
+#profiles{
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+#profiles img{
+    width: 10vw;
+}
+#profiles img{
+    width: 5vw;
+}
+#profiles #linkdin img{
+    width: 3vw;
+}
+h1#Prof{
+    font-size: 2.75vw;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 35vh;
+    line-height: 1;
+}
+h1#Prof span{
+    font-size: 1vw;
+    font-weight: 200;
+}
+footer{
+    font-size: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 55vh;
+    height: 15vh;
+    background-color: rgb(185, 207, 233);
+}
+/* UTILITY */
+
+/* Media Queries */
+@media (max-width:600px){
+    nav #Menu h1{
+        display: none;
+    }
+    nav #Menu i{
+        display: block;
+    }
+    #two{
+        flex-direction: column;  
+    }
+    #two img{
+        width: 25vh;
+    }
+    #two #Content #Name{
+        font-size: 2.75vh;    
+    }
+    #two #Content #Work{
+        font-size: 3.75vh;   
+    }
+    #two #Content #Greet{
+        font-size: 1.75vh;
+    }
+    #two{
+        padding-top: 15vh; 
+    }
+    #three{
+       margin-top: 2vh;
+    
+    }
+    h1#about{
+        margin-top: 30vh;
+    }
+    #three #aboutTxt{
+        text-align: justify;
+        padding: 0;
+        font-size: 1vw;
+        line-height: 2;
+    }
+    #three #nane img{
+        display: none;
+    }
+
+}
+
