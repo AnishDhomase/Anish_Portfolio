@@ -270,14 +270,75 @@ footer{
         margin-top: 30vh;
     }
     #three #aboutTxt{
+        width: 90%;
         text-align: justify;
         padding: 0;
-        font-size: 1vw;
+        font-size: 2.23vw;
         line-height: 2;
     }
     #three #nane img{
         display: none;
     }
+    #two #Content #Button{
+        padding: 1vh 19vw;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1vw;
+    }
+    h1#about{
+        font-size: 3.75vh;
+       
+    }
+    h1#about span{
+        font-size: 1.5vh;
+        
+    }
+    h1#skillHead{
+        font-size: 3.75vh;
+    }
+    h1#skillHead span{
+        font-size: 1.5vh;
+    }
+    h1#Prof{
+        font-size: 3.75vh;
+    }
+    h1#Prof span{
+        font-size: 1.5vh;
+    }
+    #skills img{
+        height: 11vh;
+        width: 10vh;
+    }
+    #skills #css img{
+        margin-top: 13px;
+        height: 11vh;
+        width: 10vh;
+    }
+    #skills #js img{
+        margin-top: 13px;
+        height: 11vh;
+        width: 10vh;
+    }
+    #skills h1{
+        font-size: 2.12vh;
+        font-weight: 100;
+    }
+    #profiles img{
+        width: 9vh;
+    }
+    #profiles #linkdin img{
+        width: 6vh;
+    }
+    
 
+}
+
+@media (max-width:370px){
+    nav #Logo{
+        font-size: 3vh;
+        
+    }
 }
 
